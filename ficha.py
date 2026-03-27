@@ -80,5 +80,5 @@ Promedio entero: {promedio_notas_entero}
 {cierre}"""
 
     print(ficha)
-
-ficha()
+    
+#ficha()
