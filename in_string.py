@@ -4,11 +4,11 @@ def check_vowels():
     """
     nombre = input("Ingrese un nombre: ")
     nombre = nombre.lower()
-    mensaje1 = f"Contiene a: {"a" in nombre}"
-    mensaje2 = f"Contiene e: {"e" in nombre}"
-    mensaje3 = f"Contiene i: {"i" in nombre}"
-    mensaje4 = f"Contiene o: {"o" in nombre}"
-    mensaje5 = f"Contiene u: {"u" in nombre}"
+    mensaje1 = f"Contiene a: {'a' in nombre}"
+    mensaje2 = f"Contiene e: {'e' in nombre}"
+    mensaje3 = f"Contiene i: {'i' in nombre}"
+    mensaje4 = f"Contiene o: {'o' in nombre}"
+    mensaje5 = f"Contiene u: {'u' in nombre}"
     print(mensaje1)
     print(mensaje2)
     print(mensaje3)
