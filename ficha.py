@@ -26,11 +26,11 @@ def ficha():
     #   - Cierre decorativo usando repetición de string ("=" * 24)
 
     #input
-    nombre_completo = input('Ingrese su nombre completo: ')
-    correo_electronico = input('Ingrese su correo electronico: ')
-    primer_nota = input('Ingrese la primer nota: ')
-    segunda_nota = input('Ingrese la segunda nota: ')
-    tercer_nota = input('Ingrese la tercer nota: ')
+    nombre_completo = input("Ingrese su nombre completo: ")
+    correo_electronico = input("Ingrese su correo electronico: ")
+    primer_nota = input("Ingrese la primer nota: ")
+    segunda_nota = input("Ingrese la segunda nota: ")
+    tercer_nota = input("Ingrese la tercer nota: ")
 
     #limpiar
     nombre = nombre_completo.strip().title()
@@ -41,24 +41,24 @@ def ficha():
 
     #calculos
     nombre_caracteres = len(nombre)
-    espacio = nombre.find(' ')
+    espacio = nombre.find(" ")
     iniciales = nombre[0] + nombre[espacio + 1]
     apellido_usuario = nombre[espacio + 1 :].lower()
     nombre_usuario= nombre[:espacio].lower()
-    user = apellido_usuario + '.' + nombre_usuario
-    arroba = '@' in email
-    buscar_arroba = email.find('@')
+    user = apellido_usuario + "." + nombre_usuario
+    arroba = "@" in email
+    buscar_arroba = email.find("@")
     dominio = email[buscar_arroba + 1:]
-    nombre_guion = nombre.replace(' ', '_')
-    a_nombre = nombre.lower().count('a')
+    nombre_guion = nombre.replace(" ", "_")
+    a_nombre = nombre.lower().count("a")
     codigo = nombre[::-1].upper()
     suma_notas = nota1 + nota2 + nota3
     promedio_notas = suma_notas / 3
     promedio_notas_entero = suma_notas // 3
 
     #ficha
-    cierre= '=' * 24
-    ficha= f'''========================
+    cierre= "=" * 24
+    ficha= f"""========================
     FICHA DEL ALUMNO
 ========================
 Nombre: {nombre}
@@ -77,7 +77,7 @@ Nota 3: {nota3}
 Suma: {suma_notas}
 Promedio: {promedio_notas}
 Promedio entero: {promedio_notas_entero}
-{cierre}'''
+{cierre}"""
 
     print(ficha)
     
